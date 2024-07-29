@@ -1,0 +1,44 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../src/assets/imgs/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#App {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.context-menu {
+    position: absolute;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+.context-menu button {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.context-menu button:hover {
+    background: lightgray;
+}
